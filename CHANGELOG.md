@@ -10,3 +10,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - `dataset.py` file for dataset preprocessing management.
+- `g2p.py` (grapheme-to-phoneme) conversion folder script for data preprocessing.
+- `requirements.txt` file for required dependencies.
+- New `Grapheme-to-Phoneme Conversion (G2P)` section in `README.md` file.
