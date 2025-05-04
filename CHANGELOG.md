@@ -13,3 +13,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `g2p.py` (grapheme-to-phoneme) conversion folder script for data preprocessing.
 - `requirements.txt` file for required dependencies.
 - New `Grapheme-to-Phoneme Conversion (G2P)` section in `README.md` file.
+- Brand logo image for the `README.md` file.

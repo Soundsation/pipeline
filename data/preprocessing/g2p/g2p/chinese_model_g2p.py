@@ -59,7 +59,6 @@ class PolyDataset(Dataset):
         return len(self.dataset)
 
     def collate_fn(self, batch):
-
         sentences = [x[0][0] for x in batch]
         ori_sents = [x[0][1] for x in batch]
         labels = [x[1] for x in batch]
@@ -196,13 +195,7 @@ class BertPolyPredict:
                     len(labels),
                 )
             )
-            assert len(labels) + 1 == len(
-                words
-            ), "Number of labels does not match number of words"
-            assert len(labels) == len(
-                sentence
-            ), "Number of labels does not match number of sentences"
-            assert len(word_list) == len(
-                label_list
-            ), "Number of label sentences does not match number of word sentences"
+            assert len(labels) + 1 == len(words), "Number of labels does not match number of words"
+            assert len(labels) == len(sentence), "Number of labels does not match number of sentences"
+            assert len(word_list) == len(label_list), "Number of label sentences does not match number of word sentences"
         return word_list, label_list, text_list

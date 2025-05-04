@@ -86,12 +86,12 @@ def _phonemize(  # pylint: disable=too-many-arguments
     prepend_text: bool,
     preserve_empty_lines: bool,
 ):
-    """Auxiliary function to phonemize()
-
-    Does the phonemization and returns the phonemized text. Raises a
-    RuntimeError on error.
-
     """
+    Auxiliary function to phonemize()
+    Does the phonemization and returns the phonemized text.
+    Raises a RuntimeError on error.
+    """
+
     # remember the text type for output (either list or string)
     text_type = type(text)
 
