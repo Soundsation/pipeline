@@ -14,3 +14,4 @@ python vad/vad_webrtcvad.py \
         --filelist_or_dir $IN \
         --out_dir $LOG_ROOT \
         --jobs $JOBS
+        

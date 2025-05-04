@@ -1,13 +1,3 @@
-# Copyright (c) Facebook, Inc. and its affiliates.
-# All rights reserved.
-#
-# This source code is licensed under the license found in the
-# LICENSE file in the root directory of this source tree.
-"""Represents a model repository, including pre-trained models and bags of models.
-A repo can either be the main remote repository stored in AWS, or a local repository
-with your own models.
-"""
-
 from hashlib import sha256
 from pathlib import Path
 import typing as tp

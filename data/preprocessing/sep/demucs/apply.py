@@ -1,12 +1,3 @@
-# Copyright (c) Facebook, Inc. and its affiliates.
-# All rights reserved.
-#
-# This source code is licensed under the license found in the
-# LICENSE file in the root directory of this source tree.
-"""
-Code to apply a model to a mix. It will handle chunking with overlaps and
-inteprolation between chunks, as well as the "shift trick".
-"""
 from concurrent.futures import ThreadPoolExecutor
 import random
 import typing as tp

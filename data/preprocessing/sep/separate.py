@@ -42,38 +42,12 @@ try:
 except:
     TOS_ENABLED = False
 
-# if not is_macos:
-#     import torch_directml
-
 mps_available = torch.backends.mps.is_available() if is_macos else False
 cuda_available = torch.cuda.is_available()
 
-# # Create ONNX Runtime session options
-# session_options = ort.SessionOptions()
-
-# # Specify the number of intra-op and inter-op threads
-# session_options.intra_op_num_threads = 1
-# session_options.inter_op_num_threads = 1
-
-# def get_gpu_info():
-#     directml_device, directml_available = DIRECTML_DEVICE, False
-    
-#     if not is_macos:
-#         directml_available = torch_directml.is_available()
-
-#         if directml_available:
-#             directml_device = str(torch_directml.device()).partition(":")[0]
-
-#     return directml_device, directml_available
-
-# DIRECTML_DEVICE, directml_available = get_gpu_info()
-
 def clear_gpu_cache():
     gc.collect()
-    if is_macos:
-        torch.mps.empty_cache()
-    else:
-        torch.cuda.empty_cache()
+    torch.cuda.empty_cache()
 
 warnings.filterwarnings("ignore")
 cpu = torch.device('cpu')
