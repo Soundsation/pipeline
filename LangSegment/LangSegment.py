@@ -1,18 +1,3 @@
-"""
-This file bundles language identification functions.
-
-Modifications (fork): Copyright (c) 2021, Adrien Barbaresi.
-
-Original code: Copyright (c) 2011 Marco Lui <saffsd@gmail.com>.
-Based on research by Marco Lui and Tim Baldwin.
-
-See LICENSE file for more info.
-https://github.com/adbar/py3langid
-
-Projects:
-https://github.com/juntaosun/LangSegment
-"""
-
 import os
 import re
 import sys

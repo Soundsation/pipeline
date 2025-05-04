@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# source $USER/miniconda3/bin/activate openl2s
+# source $USER/miniconda3/bin/activate soundsation
 
 stage=0
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7

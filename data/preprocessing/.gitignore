@@ -10,4 +10,4 @@ models.zip
 logs/*.out
 logs/*.err
 test/
-sep/openl2s_sep_ckpts
+sep/soundsation_sep_ckpts

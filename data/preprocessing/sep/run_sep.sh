@@ -1,6 +1,6 @@
 
 #!/bin/bash
-source $USER/miniconda3/bin/activate openl2s
+source $USER/miniconda3/bin/activate soundsation
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # user input test_flg, default false
